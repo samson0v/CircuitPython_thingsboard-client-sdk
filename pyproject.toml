@@ -13,7 +13,7 @@ requires = [
 [project]
 name = "thingsboard-circuitpython-client-sdk"
 description = "ThingsBoard CircuitPython client SDK"
-version = "0.0.0+auto.0"
+version = "0.0.1"
 readme = "README.rst"
 authors = [
     {name = "ThingsBoard Inc.", email = "vitalikbidochka@gmail.com"}
@@ -35,7 +35,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Embedded Systems",
     "Topic :: System :: Hardware",
-    "License :: OSI Approved :: Apache License",
+    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
 ]
 dynamic = ["dependencies", "optional-dependencies"]

@@ -23,7 +23,7 @@ Implementation Notes
 import gc
 from json import dumps, loads
 
-__version__ = "0.0.0+auto.0"
+__version__ = "0.0.1"
 __repo__ = "https://github.com/samson0v/CircuitPython_thingsboard-client-sdk.git"
 
 
