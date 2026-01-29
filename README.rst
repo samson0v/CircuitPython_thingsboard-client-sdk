@@ -91,7 +91,7 @@ Or the following command to update an existing version:
     circup update
 
 Getting Started
-=============
+===============
 
 Client initialization and telemetry publishing
 
