@@ -96,6 +96,7 @@ ignore = [
     "PLC0415", # top-level-import
     "UP031",
     "UP032",
+    "PLR0912",
 ]
 
 [format]
