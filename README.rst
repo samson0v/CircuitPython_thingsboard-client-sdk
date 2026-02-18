@@ -1,7 +1,15 @@
+ThingsBoard CircuitPython Client SDK
+====================================
 
-.. image:: https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white
-    :target: https://discord.gg/mJxDjAM3PF
-    :alt: Discord Server
+.. image:: ./logo.png
+    :alt: ThingsBoard Logo
+    :align: center
+
+.. class:: align-center
+
+ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management.
+This project is a CircuitPython library that provides convenient client SDK for
+`Device MQTT API <https://thingsboard.io/docs/reference/mqtt-api/>`_.
 
 
 .. image:: https://github.com/thingsboard/CircuitPython_thingsboard-client-sdk/workflows/Build%20CI/badge.svg
@@ -13,24 +21,65 @@
     :target: https://github.com/astral-sh/ruff
     :alt: Code Style: Ruff
 
-ThingsBoard CircuitPython Client SDK
-====================================
+
+.. image:: https://img.shields.io/badge/license-Apache_2.0-blue
+    :target: https://github.com/thingsboard/CircuitPython_thingsboard-client-sdk/blob/main/LICENSE
+    :alt: License: Apache 2.0
+
+
+.. image:: https://img.shields.io/badge/contributions-welcome-green
+    :target: https://github.com/thingsboard/CircuitPython_thingsboard-client-sdk/issues
+    :alt: Contributions Welcome
+
+
+.. image:: https://img.shields.io/github/v/release/thingsboard/CircuitPython_thingsboard-client-sdk
+    :target: https://github.com/thingsboard/CircuitPython_thingsboard-client-sdk/releases/latest
+    :alt: Release Version
+
+
+.. image:: https://img.shields.io/discord/1458396495610122526?logo=discord
+    :target: https://discord.gg/mJxDjAM3PF
+    :alt: Discord Server
+
+----
 
 **💡 Make the notion that it is the early alpha of MQTT client MicroPython SDK special for controllers. So we
 appreciate any help in improving this project and getting it growing.**
 
-ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management.
-This project is a CircuitPython library that provides convenient client SDK for Device API.
 
-**SDK supports:**
+Table of Contents
+=================
+
+- `Features <#-features>`_
+- `Dependencies <#-dependencies>`_
+- `Installation <#-installation>`_
+
+   - `PyPI <#installing-from-pypi>`_
+   - `Circup <#installing-to-a-connected-circuitpython-device-with-circup>`_
+
+- `Getting Started <#-getting-started>`_
+- `Examples <#-examples>`_
+- `Contributing <#-contributing>`_
+- `Support & Community <#-support--community>`_
+- `Licenses <#%EF%B8%8F-licenses>`_
+
+
+🧩 Features
+===========
 
 - `Device MQTT <https://thingsboard.io/docs/reference/mqtt-api/>`_ API provided by ThingsBoard
 - QoS 0 and 1
 - Automatic reconnect
-- Device Claiming
+- Sending attributes to ThingsBoard.
+- Sending telemetry data to ThingsBoard.
+- Request client and shared attributes from ThingsBoard.
+- Subscribing to attribute updates from ThingsBoard.
+- Device claiming
 
-Dependencies
-=============
+
+🔗 Dependencies
+===============
+
 This driver depends on:
 
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
@@ -41,8 +90,15 @@ This is easily achieved by downloading
 or individual libraries can be installed using
 `circup <https://github.com/adafruit/circup>`_.
 
+
+📦 Installation
+===============
+
+You can install the ThingsBoard CircuitPython Client SDK in several ways depending on your setup and preferences.
+
+
 Installing from PyPI
-=====================
+--------------------
 
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
 PyPI <https://pypi.org/project/thingsboard-circuitpython-client-sdk/>`_.
@@ -67,8 +123,9 @@ To install in a virtual environment in your current project:
     source .env/bin/activate
     pip3 install thingsboard-circuitpython-client-sdk
 
+
 Installing to a Connected CircuitPython Device with Circup
-==========================================================
+----------------------------------------------------------
 
 Make sure that you have ``circup`` installed in your Python environment.
 Install it with the following command if necessary:
@@ -90,8 +147,8 @@ Or the following command to update an existing version:
 
     circup update
 
-Getting Started
-===============
+🟢 Getting Started
+==================
 
 Client initialization and telemetry publishing
 
@@ -135,24 +192,34 @@ Client initialization and telemetry publishing
             print("Disconnect error:", e)
 
 
+🪛 Examples
+===========
+
+You can find more examples `here <./examples>`_. They demonstrate how to use the SDK to connect to ThingsBoard, send
+telemetry data, subscribe to attribute changes, handle RPC calls, etc.
 
 
+⭐ Contributing
+===============
 
-Contributing
-============
-
-Contributions are welcome! Please read our `Code of Conduct
-<https://github.com/thingsboard/CircuitPython_thingsboard-client-sdk/blob/HEAD/CODE_OF_CONDUCT.md>`_
+We welcome contributions to the ThingsBoard CircuitPython Client SDK! If you have an idea for a new feature,
+have found a bug, or want to improve the documentation, please feel free to submit a pull request or open an issue.
+Please read our `Code of Conduct <./CODE_OF_CONDUCT.md>`_
 before contributing to help this project stay welcoming.
 
-Support
-=======
+
+💬 Support & Community
+======================
+
+Need help or want to share ideas?
 
  - `Join our Discord <https://discord.gg/mJxDjAM3PF>`_
- - `Community chat <https://gitter.im/thingsboard/chat>`_
  - `Stackoverflow <http://stackoverflow.com/questions/tagged/thingsboard>`_
 
-Licenses
-========
+**🐞 Found a bug?** Please open an issue.
+
+
+⚖️ Licenses
+===========
 
 This project is released under `Apache 2.0 License <./LICENSE>`_.
